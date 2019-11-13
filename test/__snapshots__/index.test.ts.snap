@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Connected Components - Swift Plugin Button.swift snippet creation 1`] = `
+Object {
+  "description": "# For a painless usage of \`Button\` in an iOS project! 👯‍♂️
+
+You can apply *italic*, **bold**, or \`code\` inline styles.
+
+## Unordered Lists
+
+- Lists are great,
+- but perhaps don't nest
+- Sub-list formatting
+
+  - isn't the best.
+
+## Ordered Lists
+
+1. Ordered lists, too
+2. for things that are sorted;
+3. Arabic numerals
+4. are the only kind supported.",
+  "lang": "swift",
+  "snippet": "Button.init(title: String,
+            kind: Kind,
+            icon: UIImage?)
+
+Button.init(frame: NSRect)",
+}
+`;
+
+exports[`Connected Components - Swift Plugin Card.swift snippet creation 1`] = `
+Object {
+  "description": "💳 This is not a gambling card! This is a cool, useful tech card!",
+  "lang": "swift",
+  "snippet": "Card.init(title: String,
+          details: String,
+          imageHeader: String?,
+          imageSubHeader: String?,
+          image: UIImage?,
+          imagePosition: ImagePosition,
+          size: Size)",
+}
+`;

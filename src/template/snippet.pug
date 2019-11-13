@@ -1,0 +1,15 @@
+each component, compIndex in components
+    | #{component.componentName}.init(
+    if component.props
+        each prop, propIndex in component.props
+            if propIndex !== 0
+                | #{" ".repeat(`${component.componentName}.init(`.length)}
+            | #{prop.name}: #{prop.type}
+            if propIndex !== (component.props.length -1)
+                | ,
+                |
+    | )
+    if compIndex !== (components.length -1)
+        |
+        |
+        |
