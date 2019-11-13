@@ -29,7 +29,7 @@ export default class implements ConnectPlugin {
 
         const snippet = this.generateSnippet({ components });
 
-        return { snippet, lang: PrismLang.Swift, description } as ComponentData;
+        return { snippet, lang: PrismLang.Swift, description };
     }
 
     supports(x: ComponentConfig): boolean {
