@@ -21,11 +21,12 @@ You can apply *italic*, **bold**, or \`code\` inline styles.
 3. Arabic numerals
 4. are the only kind supported.",
   "lang": "swift",
-  "snippet": "Button.init(title: String,
-            kind: Kind,
-            icon: UIImage?)
+  "snippet": "Button(
+    title: String,
+    kind: Kind,
+    icon: UIImage?)
 
-Button.init(frame: NSRect)",
+Button(frame: NSRect)",
 }
 `;
 
@@ -33,12 +34,13 @@ exports[`Connected Components - Swift Plugin Card.swift snippet creation 1`] = `
 Object {
   "description": "💳 This is not a gambling card! This is a cool, useful tech card!",
   "lang": "swift",
-  "snippet": "Card.init(title: String,
-          details: String,
-          imageHeader: String?,
-          imageSubHeader: String?,
-          image: UIImage?,
-          imagePosition: ImagePosition,
-          size: Size)",
+  "snippet": "Card(
+    title: String,
+    details: String,
+    imageHeader: String?,
+    imageSubHeader: String?,
+    image: UIImage?,
+    imagePosition: ImagePosition,
+    size: Size)",
 }
 `;

@@ -1,9 +1,12 @@
 each component, compIndex in components
-    | #{component.componentName}.#{component.methodName}(
+    | #{component.componentName}(
     if component.props
+        if component.props.length > 1
+            |
+            |
         each prop, propIndex in component.props
-            if propIndex !== 0
-                | #{" ".repeat(`${component.componentName}.init(`.length)}
+            if component.props.length > 1
+                | #{" ".repeat(4)}
             | #{prop.name}: #{prop.type}
             if propIndex !== (component.props.length -1)
                 | ,

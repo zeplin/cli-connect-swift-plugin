@@ -68,6 +68,16 @@ final class Button: UIButton {
         setTitle(title, for: .normal)
     }
 
+    override init() {
+        super.init(frame: .zero)
+
+        setTitleColor(.black, for: .normal)
+        setTitle("Title", for: .normal)
+
+        setBackgroundColor(color: .primary, forState: .normal)
+        setBackgroundColor(color: .primary.withAlphaComponent(0.8), forState: .highlighted)
+    }
+
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
