@@ -73,13 +73,14 @@ export default class implements ConnectPlugin {
             const classDefinition = [...syntaxTree["key.substructure"]]
                 .find((e: any) => e["key.kind"] === "source.lang.swift.decl.class");
 
+            const methodName = "init";
             const componentName = classDefinition["key.name"];
 
             const components: Component[] = [];
 
             classDefinition["key.substructure"]
                 .filter((e: any) => e["key.kind"] === "source.lang.swift.decl.function.method.instance")
-                .filter((e: any) => e["key.name"].startsWith("init"))
+                .filter((e: any) => e["key.name"].startsWith(methodName))
                 .filter((m: any) =>
                     !(m["key.substructure"].find(
                         (a: { [x: string]: string }) => a["key.typename"] === "NSCoder")
@@ -94,7 +95,7 @@ export default class implements ConnectPlugin {
 
                     components.push({
                         componentName,
-                        methodName: "init",
+                        methodName,
                         props
                     });
                 });
