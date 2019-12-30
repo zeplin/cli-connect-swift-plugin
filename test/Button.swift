@@ -61,14 +61,7 @@ final class Button: UIButton {
         setBackgroundColor(color: kind.color.withAlphaComponent(0.8), forState: .highlighted)
     }
 
-    override init(frame: NSRect) {
-        super.init(frame: frame)
-
-        setTitleColor(.black, for: .normal)
-        setTitle(title, for: .normal)
-    }
-
-    override init() {
+    required override init() {
         super.init(frame: .zero)
 
         setTitleColor(.black, for: .normal)
@@ -76,6 +69,13 @@ final class Button: UIButton {
 
         setBackgroundColor(color: .primary, forState: .normal)
         setBackgroundColor(color: .primary.withAlphaComponent(0.8), forState: .highlighted)
+    }
+
+    override init(frame: NSRect) {
+        super.init(frame: frame)
+
+        setTitleColor(.black, for: .normal)
+        setTitle(title, for: .normal)
     }
 
     required init?(coder aDecoder: NSCoder) {
