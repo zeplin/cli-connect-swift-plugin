@@ -12,7 +12,7 @@ npm install -g @zeplin/cli @zeplin/cli-connect-swift-plugin
 
 Execute connect command on Zeplin CLI using -p option to include the plugin into the connect operation.
 ```
-zeplin connect -p @zeplin/cli-connect-swift-plugin -f components.json
+zeplin connect -p @zeplin/cli-connect-swift-plugin
 ```
 
 ## Dependencies
