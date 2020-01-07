@@ -10,9 +10,9 @@ Install the plugin using npm.
 npm install -g @zeplin/cli-connect-swift-plugin
 ```
 
-### SourceKitten
+Zeplin CLI Swift Plugin uses [SourceKitten](https://github.com/jpsim/SourceKitten) to analyze and collect information from Swift files. Install it by following the instructions.
 
-[SourceKitten](https://github.com/jpsim/SourceKitten#installation) is required to be installed on the running environment, please check its documentation for installation instructions.
+[SourceKitten installation instructions](https://github.com/jpsim/SourceKitten#installation)
 
 ## Usage
 
@@ -21,6 +21,8 @@ Run CLI `connect` command using the plugin.
 ```sh
 zeplin connect -p @zeplin/cli-connect-swift-plugin
 ```
+
+_<TODO: Describe what types of Swift classes are supported with examples.>_
 
 ## About Connected Components
 
