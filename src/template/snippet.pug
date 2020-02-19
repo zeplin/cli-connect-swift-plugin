@@ -1,18 +1,15 @@
 each component, compIndex in components
     | #{component.componentName}(
     if component.props
-        if component.props.length > 1
-            |
-            |
         each prop, propIndex in component.props
-            if component.props.length > 1
-                | #{" ".repeat(4)}
+            if component.props.length > 1 && propIndex !== 0
+                | #{" ".repeat(component.componentName.length + 1)}
             | #{prop.name}: #{prop.type}
-            if propIndex !== (component.props.length -1)
+            if propIndex !== (component.props.length - 1)
                 | ,
                 |
     | )
-    if compIndex !== (components.length -1)
+    if compIndex !== (components.length - 1)
         |
         |
         |
