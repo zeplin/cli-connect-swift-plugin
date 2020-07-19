@@ -29,7 +29,7 @@
     "@types/pug": "^2.0.4",
     "@typescript-eslint/eslint-plugin": "^2.3.0",
     "@typescript-eslint/parser": "^2.3.0",
-    "@zeplin/cli": "^0.2.2",
+    "@zeplin/cli": "^1.0.4",
     "@zeplin/eslint-config": "^2.2.0",
     "copyfiles": "^2.1.1",
     "eslint": "^6.4.0",
