@@ -1,6 +1,6 @@
 {
   "name": "@zeplin/cli-connect-swift-plugin",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Zeplin CLI Connected Components - Swift Plugin",
   "main": "./dist/index",
   "scripts": {
